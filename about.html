@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درباره ما | باشگاه بسکتبال ایرانیان</title>
+<meta name="description" content="چرا باشگاه ما بهترین انتخاب برای باشگاه بسکتبال در کرج است؟">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5/index.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #060f26;
+  --color-navy-900: #0a1a3c;
+  --color-navy-800: #0f2550;
+  --color-navy-700: #163262;
+  --color-navy-600: #1f4079;
+  --color-neon: #b5ff1f;
+  --color-neon-dim: #93d40f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-navy-950);
+  color: #dbe4f5;
+  font-family: var(--font-sans);
+  line-height: 1.9;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-navy-950);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 3px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="antialiased">
+<a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] focus:rounded focus:bg-neon focus:px-3 focus:py-2 focus:text-navy-950">پرش به محتوا</a>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy-950/85 backdrop-blur-md">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+<a href="index.html" class="focus-ring flex items-center gap-3">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" class="h-14 w-auto">
+<span class="hidden text-base font-bold text-white sm:block">باشگاه بسکتبال ایرانیان</span>
+</a>
+
+<nav class="hidden items-center gap-1 lg:flex" aria-label="منوی اصلی">
+<a href="index.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">خانه</a>
+<a href="about.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-neon">درباره ما<span class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-neon"></span></a>
+<a href="services.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">فعالیت ها</a>
+<a href="news.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">اخبار</a>
+<a href="couching-team.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">کادر مربیگری</a>
+<a href="contact.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">ارتباط با ما</a>
+</nav>
+
+<div class="flex items-center gap-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center gap-2 rounded-full bg-neon px-5 py-2 text-sm font-bold text-navy-950 transition hover:bg-white sm:inline-flex">
+<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+ایرانیان
+</a>
+<button type="button" id="menu-btn" aria-label="باز و بسته کردن منو" aria-expanded="false" class="focus-ring flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden">
+<svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path id="menu-icon" d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+</div>
+</div>
+
+<nav id="mobile-nav" class="hidden border-t border-white/10 bg-navy-900 lg:hidden" aria-label="منوی موبایل">
+<ul class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+<li><a href="index.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">خانه</a></li>
+<li><a href="about.html" class="block rounded-lg px-3 py-3 text-base font-medium bg-white/5 text-neon">درباره ما</a></li>
+<li><a href="services.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">فعالیت ها</a></li>
+<li><a href="news.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">اخبار</a></li>
+<li><a href="couching-team.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">کادر مربیگری</a></li>
+<li><a href="contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">ارتباط با ما</a></li>
+<li class="pt-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="block rounded-lg bg-neon px-3 py-3 text-center font-bold text-navy-950">ایرانیان</a>
+</li>
+</ul>
+</nav>
+</header>
+<main id="content">
+<section class="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-navy-800 to-navy-950">
+<div class="pointer-events-none absolute -top-32 -left-24 h-72 w-72 rounded-full bg-neon/10 blur-3xl"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 relative py-16 sm:py-20"><p class="mb-3 text-sm font-bold text-neon">باشگاه بسکتبال ایرانیان</p><h1 class="text-3xl font-extrabold leading-tight text-white sm:text-5xl">درباره ما</h1><div class="mt-6 h-1 w-20 rounded-full bg-neon"></div></div>
+</section>
+
+<div class="mx-auto max-w-7xl px-4 sm:px-6 space-y-8 py-14">
+<img src="images/about-1.jpg" alt="باشگاه بسکتبال در کرج" title="درباره ما 1" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover max-h-[560px]">
+
+<div class="max-w-4xl">
+<h2 class="text-2xl font-extrabold leading-snug text-white sm:text-4xl">چرا باشگاه ما بهترین انتخاب برای باشگاه بسکتبال در کرج است؟</h2>
+<div class="mt-5 h-1 w-20 rounded-full bg-neon"></div>
+<h2 class="mt-8 text-lg font-bold italic leading-9 text-neon">
+<a href="contact.html">اگر به دنبال یک باشگاه بسکتبال در کرج با مربیان با تجربه هستید، باشگاه ایرانیان یکی از بهترین انتخاب هاست.</a>
+</h2>
+<p class="mt-5 text-[15px] leading-8 text-slate-300">باشگاه آموزش بسکتبال در کرج (ایرانیان) به عنوان یک مرکز پیشرو در زمینه آموزش تخصصی بسکتبال در کرج، با افتخار به ارائه بهترین خدمات آموزشی به بازیکنان جوان از سنین ۸ تا ۱۸ سال می‌پردازد. هدف اصلی باشگاه بسکتبال در کرج (ایرانیان)، فراهم آوردن محیطی است که در آن هر بازیکن بتواند به بهترین نسخه خود تبدیل شود. ما به اصولی چون تمرین تخصصی، نظم و اخلاق، و ارتباط موثر بین هم تیمی‌ها و مربیان معتقدیم و تلاش می‌کنیم تا بازیکنان را برای شرکت در مسابقات استانی البرز و تهران آماده کنیم.</p>
+</div>
+
+<div class="grid gap-6 lg:grid-cols-2">
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h3 class="mb-4 text-xl font-extrabold text-white">یادگیری تخصصی</h3>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300 ">
+<p>ما بر این باوریم که یادگیری تخصصی یکی از مهم‌ترین عوامل موفقیت در این رشته است. برنامه‌های تمرینی ما در کلاس بسکتبال در کرج به گونه‌ای طراحی شده‌اند که تمامی جوانب فنی، تاکتیکی، فیزیکی و روانی بازیکنان را پوشش دهند. مربیان ما که از بین بهترین‌های این رشته انتخاب شده‌اند، با بهره‌گیری از روش‌های مدرن و علمی، به هر بازیکن کمک می‌کنند تا مهارت‌های خود را بهبود بخشند و به بالاترین سطح عملکرد در این ورزش برسند.</p>
+<p>در کلاس بسکتبال ایرانیان،مربیان ما در هر جلسه تمرین، با دقت و توجه به نیازهای فردی بازیکنان، به آموزش تکنیک‌های پایه‌ای و پیشرفته می‌پردازند. این تکنیک‌ها شامل دریبل‌زدن، پاس دادن، شوت‌زنی، دفاع و تاکتیک‌های تیمی است.</p>
+<p>علاوه بر این، ما به بازیکنان کمک می‌کنیم تا با تمرینات فیزیکی منظم و موثر، قدرت، سرعت، استقامت و هماهنگی بدنی خود را افزایش دهند.</p>
+</div>
+</section>
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h3 class="mb-4 text-xl font-extrabold text-white">نظم و اخلاق</h3>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300 ">
+<p>نظم و اخلاق دو ستون اساسی در باشگاه بسکتبال ایرانیان در کرج هستند. ما به بازیکنان خود می آموزیم که بسکتبال تنها یک ورزش نیست، بلکه یک سبک زندگی است که نیازمند انضباط فردی و احترام به دیگران است.</p>
+<p>ارزش‌های اخلاقی مانند صداقت، احترام، همکاری و مسئولیت‌پذیری به بازیکنان آموزش داده می‌شود.</p>
+<p>ما معتقدیم که این ارزش‌ها نه تنها در زمین مسابقه بلکه در زندگی روزمره نیز اهمیت دارند و به شکل‌گیری شخصیت سالم و موفق بازیکنان کمک می‌کنند. در کلاس بسکتبال، هر بازیکن موظف است که به هم تیمی‌ها، مربیان و حتی رقبا با احترام برخورد کند و همواره رفتارهای انسانی را سرلوحه کار خود قرار دهد.</p>
+</div>
+</section>
+</div>
+
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h3 class="mb-4 text-xl font-extrabold text-white">مربیان با تجربه و متخصص</h3>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300 ">
+<p>یکی از برجسته‌ترین نقاط قوت باشگاه بسکتبال در کرج (ایرانیان)، تیم مربیگری حرفه‌ای و با تجربه آن است.</p>
+<p>این مربیان با بهره‌گیری از روش‌های آموزشی نوین و تکنیک‌های مدرن، تلاش می‌کنند تا بازیکنان را به بهترین نحو ممکن ارتقا دهند و پیشرفت آن‌ها را تضمین کنند.</p>
+<p>مربیان نیز نه تنها در آموزش تخصصی در سالن بسکتبال و مهارت‌های فنی تبحر دارند، بلکه با اصول روانشناسی ورزشی نیز کاملاً آشنا هستند. آن‌ها می‌توانند با بهره‌گیری از این دانش، به بازیکنان در مدیریت استرس‌های ورزشی کمک کنند و اعتماد به نفس آن‌ها را افزایش دهند.</p>
+<p>این رویکرد جامع و متوازن، از باشگاه بسکتبال ایرانیان یک محیط آموزشی برجسته و مؤثر ساخته است..</p>
+</div>
+</section>
+
+<div class="pt-6">
+<h2 class="text-2xl font-extrabold text-white sm:text-3xl"><a href="contact.html">کلاس بسکتبال در کرج به صورت حرفه ای</a></h2>
+</div>
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h3 class="mb-4 text-xl font-extrabold text-white">ارتباط خوب بین هم تیمی‌ها و مربیان</h3>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300 ">
+<p>یکی از عوامل مهم در موفقیت تیمی، ارتباط موثر بین هم تیمی‌ها و مربیان است. در اینجا، ما به ایجاد محیطی دوستانه و حمایتی اهمیت می‌دهیم که در آن هر بازیکن بتواند با اعتماد به نفس و آرامش به تمرین و مسابقه بپردازد.</p>
+<p>مربیان ما با بازیکنان خود ارتباط نزدیک و صمیمانه‌ای برقرار می‌کنند و به آنها کمک می‌کنند تا از تجربیات و دانش آنها بهره‌مند شوند.</p>
+<p>هم تیمی‌ها نیز تشویق می‌شوند تا با همکاری و حمایت از یکدیگر، یک تیم قوی و متحد را تشکیل دهند. ما بر این باوریم که تیمی که اعضای آن بتوانند با یکدیگر به خوبی ارتباط برقرار کنند و به یکدیگر اعتماد داشته باشند، می‌تواند به موفقیت‌های بزرگی دست یابد.</p>
+<p>از این رو، تمرینات ما نه تنها به تقویت مهارت‌های فردی بلکه به توسعه همکاری و هماهنگی تیمی نیز اختصاص دارد</p>
+</div>
+</section>
+
+<div class="pt-6">
+<h2 class="text-2xl font-extrabold text-white sm:text-3xl"><a href="contact.html">برنامه‌های تمرینی در باشگاه بسکتبال کرج</a></h2>
+</div>
+<div class="grid items-start gap-6 lg:grid-cols-2">
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h3 class="mb-4 text-xl font-extrabold text-white">شرکت در مسابقات</h3>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300 ">
+<p>یکی از اهداف اصلی ما، آماده‌سازی بازیکنان برای شرکت در مسابقات مختلف استانی البرز و تهران است. این مسابقات فرصتی عالی برای بازیکنان فراهم می‌کند تا مهارت‌های خود را در شرایط واقعی و تحت فشار آزموده و تجربیات ارزشمندی کسب کنند.</p>
+<p>شرکت در مسابقات و حضور در سالن بسکتبال باعث ارتقاء سطح رقابتی بازیکنان و افزایش انگیزه و اعتماد به نفس آنها می‌شود.</p>
+<p>ما در باشگاه بسکتبال در کرج (ایرانیان) به بازیکنان خود می آموزیم که چگونه در مقابل رقبا با روحیه ورزشی و احترام برخورد کنند و همواره بهترین عملکرد خود را به نمایش بگذارند. شرکت در مسابقات همچنین به بازیکنان کمک می‌کند تا با چالش‌های مختلف روبرو شوند و یاد بگیرند که چگونه با شکست‌ها و موفقیت‌ها به طور مثبت و سازنده‌ای برخورد کنند.</p>
+</div>
+</section>
+<img src="images/about-2.jpg" alt="باشگاه بسکتبال در کرج" title="درباره ما 2" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover ">
+</div>
+
+<div class="pt-6">
+<h1 class="text-2xl font-extrabold text-white sm:text-3xl"><a href="contact.html"><span class="text-neon">باشگاه بسکتبال در کرج با امکانات حرفه ای</span></a></h1>
+</div>
+<section class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+
+<div class="space-y-4 text-[15px] leading-8 text-slate-300">
+<h4 class="text-base font-bold leading-8 text-white"><span class="text-neon">کلام آخر…</span> باشگاه بسکتبال در کرج (ایرانیان) با تعهد به ارائه آموزش تخصصی بسکتبال و با کیفیت، ترویج نظم و اخلاق، و ایجاد ارتباط خوب بین هم تیمی‌ها و مربیان، محیطی ایده‌آل برای پرورش بازیکنان جوان فراهم می‌کند. این باشگاه با هدف ترویج ورزش و فرهنگ همکاری و کار تیمی تلاش دارد تا شرایطی مناسب برای رشد و پرورش استعدادهای این کشور فراهم نماید.</h4>
+<h4 class="text-base font-bold leading-8 text-white">ما با شرکت در مسابقات استانی البرز و تهران، فرصتی برای بازیکنانمان ایجاد می‌کنیم تا توانایی‌های خود را به نمایش بگذارند و به سطوح بالاتری در این رشته دست یابند. فرزندان ما خواهند آموخت که برای رشد باید تلاش کرد و با تمرکز و اراده می توان به پیشرفت های چشمگیری دست یافت.</h4>
+<p>در این باشگاه، هر بازیکن به عنوان یک فرد منحصر به فرد مورد توجه قرار می‌گیرد و برنامه‌های تخصصی ما به گونه‌ای طراحی شده‌اند که نیازهای خاص هر بازیکن را برآورده کنند.</p>
+<p>ما به بازیکنان کمک می‌کنیم تا نه تنها در زمین مسابقه بلکه در زندگی شخصی و اجتماعی خود نیز موفق باشند و به بهترین نسخه خود تبدیل شوند.</p>
+<p>بنابراین، اگر شما به دنبال یک باشگاه بسکتبال آکادمیک در کرج هستید، باشگاه بسکتبال ایرانیان می تواند به عنوان بهترین باشگاه بسکتبال در کرج برای فرزند شما باشد.</p>
+<p>ما با افتخار به پرورش نسل آینده بازیکنان بسکتبال ایران می‌پردازیم و امیدواریم که بتوانیم سهمی کوچک در موفقیت‌ها و افتخارات ورزشی کشورمان داشته باشیم.</p>
+</div>
+</section>
+
+<!-- Values -->
+<div class="grid items-stretch gap-6 pt-6 lg:grid-cols-[1.3fr_1fr]">
+<div class="space-y-6">
+<div class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<h2 class="text-2xl font-extrabold text-white">ارزش های ما</h2>
+<ul class="mt-6 grid gap-4 sm:grid-cols-3">
+<li class="flex items-center gap-3 rounded-xl bg-navy-950 px-4 py-4">
+<span class="flex h-10 w-10 items-center justify-center rounded-full bg-neon text-sm font-extrabold text-navy-950">۱</span>
+<span class="font-bold text-white">خانواده</span>
+</li>
+<li class="flex items-center gap-3 rounded-xl bg-navy-950 px-4 py-4">
+<span class="flex h-10 w-10 items-center justify-center rounded-full bg-neon text-sm font-extrabold text-navy-950">۲</span>
+<span class="font-bold text-white">اخلاق</span>
+</li>
+<li class="flex items-center gap-3 rounded-xl bg-navy-950 px-4 py-4">
+<span class="flex h-10 w-10 items-center justify-center rounded-full bg-neon text-sm font-extrabold text-navy-950">۳</span>
+<span class="font-bold text-white">تلاش</span>
+</li>
+</ul>
+</div>
+<div class="grid gap-6 sm:grid-cols-2">
+<div class="rounded-2xl border border-white/10 bg-navy-900 p-7">
+<h2 class="text-xl font-extrabold text-neon"><a href="about.html">هدف ما</a></h2>
+<p class="mt-3 leading-8 text-slate-300">لذت بازی بسکتبال در کنار آموختن یک هنر جدید. تلاش برای حفظ سلامتی بدن و افزایش توانایی آن</p>
+</div>
+<div class="rounded-2xl border border-white/10 bg-navy-900 p-7">
+<h2 class="text-xl font-extrabold text-neon"><a href="services.html">برنامه ما</a></h2>
+<p class="mt-3 leading-8 text-slate-300">در تلاشیم که هر روز بهتر از دیروز باشیم</p>
+</div>
+</div>
+</div>
+<img src="images/about-3.jpg" alt="باشگاه بسکتبال در کرج" title="درباره ما 3" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover h-full max-h-[560px]">
+</div>
+</div>
+</main>
+<footer class="mt-24 border-t border-white/10 bg-navy-900">
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
+<div class="flex items-start gap-5">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" title="آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید" class="h-24 w-auto shrink-0">
+<div>
+<h2 class="text-base font-bold text-white">آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید</h2>
+<a href="index.html" class="mt-2 inline-block text-sm text-neon hover:underline">iranianbasketball.com</a>
+</div>
+</div>
+
+<nav aria-label="پیوندها">
+<h3 class="mb-4 text-sm font-bold text-neon">دسترسی سریع</h3>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="text-slate-300 transition hover:text-white">خانه</a></li>
+<li><a href="about.html" class="text-slate-300 transition hover:text-white">درباره ما</a></li>
+<li><a href="services.html" class="text-slate-300 transition hover:text-white">فعالیت ها</a></li>
+<li><a href="news.html" class="text-slate-300 transition hover:text-white">اخبار</a></li>
+<li><a href="couching-team.html" class="text-slate-300 transition hover:text-white">کادر مربیگری</a></li>
+<li><a href="contact.html" class="text-slate-300 transition hover:text-white">ارتباط با ما</a></li>
+</ul>
+</nav>
+
+<div>
+<h3 class="mb-4 text-sm font-bold text-neon">راه های ارتباطی</h3>
+<ul class="space-y-3 text-sm">
+<li>
+<a href="mailto:coach@iranianbasketball.com" class="text-slate-300 transition hover:text-white">
+Email
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">coach@iranianbasketball.com</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/iranian.basketball?igsh=c3Z5d3B5a3VxbjN5" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">Instagram</a>
+</li>
+<li>
+<a href="tel:+989121360626" class="text-slate-300 transition hover:text-white">
+Phone 1
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">09121360626</span>
+</a>
+</li>
+<li class="text-slate-300">YouTube</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+<p dir="ltr">Copyright © 2026 باشگاه بسکتبال ایرانیان | Powered by باشگاه بسکتبال ایرانیان</p>
+</div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  var icon = document.getElementById('menu-icon');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.setAttribute('d', open ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16');
+  });
+})();
+</script>
+</body>
+</html>

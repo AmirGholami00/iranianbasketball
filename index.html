@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>باشگاه بسکتبال ایرانیان | آموزش بسکتبال در کرج و گوهردشت</title>
+<meta name="description" content="باشگاه بسکتبال ایرانیان، یکی از معتبرترین مراکز آموزش بسکتبال در استان البرز (کرج، گوهردشت، باغستان و جهانشهر). هم می آموزیم و هم لذت می بریم.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5/index.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #060f26;
+  --color-navy-900: #0a1a3c;
+  --color-navy-800: #0f2550;
+  --color-navy-700: #163262;
+  --color-navy-600: #1f4079;
+  --color-neon: #b5ff1f;
+  --color-neon-dim: #93d40f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-navy-950);
+  color: #dbe4f5;
+  font-family: var(--font-sans);
+  line-height: 1.9;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-navy-950);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 3px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="antialiased">
+<a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] focus:rounded focus:bg-neon focus:px-3 focus:py-2 focus:text-navy-950">پرش به محتوا</a>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy-950/85 backdrop-blur-md">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+<a href="index.html" class="focus-ring flex items-center gap-3">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" class="h-14 w-auto">
+<span class="hidden text-base font-bold text-white sm:block">باشگاه بسکتبال ایرانیان</span>
+</a>
+
+<nav class="hidden items-center gap-1 lg:flex" aria-label="منوی اصلی">
+<a href="index.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-neon">خانه<span class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-neon"></span></a>
+<a href="about.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">درباره ما</a>
+<a href="services.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">فعالیت ها</a>
+<a href="news.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">اخبار</a>
+<a href="couching-team.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">کادر مربیگری</a>
+<a href="contact.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">ارتباط با ما</a>
+</nav>
+
+<div class="flex items-center gap-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center gap-2 rounded-full bg-neon px-5 py-2 text-sm font-bold text-navy-950 transition hover:bg-white sm:inline-flex">
+<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+ایرانیان
+</a>
+<button type="button" id="menu-btn" aria-label="باز و بسته کردن منو" aria-expanded="false" class="focus-ring flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden">
+<svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path id="menu-icon" d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+</div>
+</div>
+
+<nav id="mobile-nav" class="hidden border-t border-white/10 bg-navy-900 lg:hidden" aria-label="منوی موبایل">
+<ul class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+<li><a href="index.html" class="block rounded-lg px-3 py-3 text-base font-medium bg-white/5 text-neon">خانه</a></li>
+<li><a href="about.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">درباره ما</a></li>
+<li><a href="services.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">فعالیت ها</a></li>
+<li><a href="news.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">اخبار</a></li>
+<li><a href="couching-team.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">کادر مربیگری</a></li>
+<li><a href="contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">ارتباط با ما</a></li>
+<li class="pt-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="block rounded-lg bg-neon px-3 py-3 text-center font-bold text-navy-950">ایرانیان</a>
+</li>
+</ul>
+</nav>
+</header>
+<main id="content">
+<!-- Hero -->
+<section class="relative overflow-hidden bg-gradient-to-br from-navy-800 via-navy-900 to-navy-950">
+<div class="pointer-events-none absolute -top-40 right-0 h-96 w-96 rounded-full bg-neon/10 blur-3xl"></div>
+<div class="pointer-events-none absolute inset-0 opacity-[0.06] [background-image:linear-gradient(#fff_1px,transparent_1px),linear-gradient(90deg,#fff_1px,transparent_1px)] [background-size:48px_48px]"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 relative grid items-center gap-12 py-16 sm:py-24 lg:grid-cols-[1.2fr_1fr]"><div>
+<p class="mb-4 inline-flex items-center gap-2 rounded-full border border-neon/40 bg-neon/10 px-4 py-1.5 text-sm font-bold text-neon">
+<span class="h-2 w-2 rounded-full bg-neon"></span>
+<a href="index.html">باشگاه بسکتبال ایرانیان</a>
+</p>
+<h1 class="text-4xl font-extrabold leading-[1.4] text-white sm:text-5xl lg:text-6xl">
+<a href="contact.html">هم می آموزیم و <span class="text-neon">هم لذت می بریم</span></a>
+</h1>
+<p class="mt-6 max-w-xl text-lg leading-9 text-slate-300">ایجاد فضای آموزشی و ورزشی به همراه لذت یادگیری مفاهیم بسکتبال</p>
+<div class="mt-9 flex flex-wrap gap-3">
+<a href="about.html" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition bg-neon text-navy-950 hover:bg-white">درباره ما</a>
+<a href="services.html" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition border border-white/25 text-white hover:border-neon hover:text-neon">فعالیت ها</a>
+<a href="contact.html" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition border border-white/25 text-white hover:border-neon hover:text-neon">تماس با ما</a>
+</div>
+</div>
+<div class="relative mx-auto w-full max-w-md">
+<div class="absolute inset-6 rounded-full bg-neon/15 blur-3xl"></div>
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" class="relative w-full drop-shadow-2xl">
+</div></div>
+</section>
+
+<!-- Tiles -->
+<section class="border-y border-white/10 bg-navy-900">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 grid gap-px overflow-hidden sm:grid-cols-3"><a href="news.html" class="group flex items-center justify-between gap-4 px-2 py-8 transition sm:px-8">
+<span class="flex items-center gap-4">
+<span class="text-sm font-bold text-neon">۰۱</span>
+<span class="text-xl font-bold text-white transition group-hover:text-neon">مسابقات رسمی</span>
+</span>
+<svg viewBox="0 0 24 24" class="h-6 w-6 text-slate-500 transition group-hover:-translate-x-1 group-hover:text-neon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+</a>
+<a href="news.html" class="group flex items-center justify-between gap-4 px-2 py-8 transition sm:px-8">
+<span class="flex items-center gap-4">
+<span class="text-sm font-bold text-neon">۰۲</span>
+<span class="text-xl font-bold text-white transition group-hover:text-neon">مسابقات دوستانه</span>
+</span>
+<svg viewBox="0 0 24 24" class="h-6 w-6 text-slate-500 transition group-hover:-translate-x-1 group-hover:text-neon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+</a>
+<a href="services.html" class="group flex items-center justify-between gap-4 px-2 py-8 transition sm:px-8">
+<span class="flex items-center gap-4">
+<span class="text-sm font-bold text-neon">۰۳</span>
+<span class="text-xl font-bold text-white transition group-hover:text-neon">تمرین ها</span>
+</span>
+<svg viewBox="0 0 24 24" class="h-6 w-6 text-slate-500 transition group-hover:-translate-x-1 group-hover:text-neon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+</a></div>
+</section>
+
+<!-- Intro -->
+<section class="py-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 grid gap-12 lg:grid-cols-[1fr_1.4fr]"><div>
+<h3 class="text-3xl font-extrabold leading-snug text-white sm:text-4xl">باشگاه بسکتبال ایرانیان <span class="text-neon">اینجاست…</span></h3>
+<div class="mt-6 h-1 w-20 rounded-full bg-neon"></div>
+</div>
+<div class="space-y-4 text-[15px] leading-8 text-slate-300">
+<p><span class="block">در سطح پایه  آموزش ها به صورت انواع بازیهای شاد و مفرح است که علاوه بر بالا بردن توان و افزایش هماهنگی اعضاء بدن، کودکان را به این رشته ورزشی علاقمند می کند.</span><span class="block">در سنین بالاتر بازیکنان در سطوح مختلف آموزش می بینند و در قالب گروه های مشخص در بازیهای دوستانه شرکت می کنند.</span></p>
+<p><span class="block">این بازی ها به بازیکنان کمک می کند فارغ از نگرانی و استرس بتوانند توانایی های خود را بشناسند و از بسکتبال لذت ببرند.</span></p>
+<p><span class="block">همچنین به مربیان کمک می کند تا نقاط قوت و ضعف فردی و تیمی را شناسایی نمایند تا در دروند آموزش بازیکنان نقاط قوت آنها را تقویت و نقاط ضعف را برطرف نمایند.</span></p>
+<p><span class="block">طبق نظر کادر مربیان باشگاه، بازیکنان برتر در قالب تیم های رده مینی، نونهالان، نوجوانان و جوانان در مسابقات رسمی استان و خارج از استان شرکت می نمایند.</span></p>
+<p><span class="block">در حال حاضر کلاس های آموزشی در استان البرز و شهرهای کرج، گوهردشت، باغستان و جهانشهر برگزار می گردد.</span></p>
+<p class="font-bold text-white">شما هم می توانید بسکتبال را بیاموزید و لذت ببرید.</p>
+<p class="italic text-neon">جهت کسب اطلاعات بیشتر با ما تماس بگیرید.</p>
+</div></div>
+</section>
+
+<!-- Family CTA -->
+<section class="pb-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 "><div class="relative overflow-hidden rounded-3xl bg-neon px-8 py-12 text-navy-950 sm:px-14 sm:py-14">
+<div class="pointer-events-none absolute -bottom-20 -left-16 h-64 w-64 rounded-full bg-navy-950/10"></div>
+<div class="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+<div>
+<h2 class="text-2xl font-extrabold sm:text-4xl">حمایت و همدلی خانواده ایرانیان</h2>
+<p class="mt-2 text-lg font-medium text-navy-900/80">برای داشتن این خانواده به خود افتخار می کنیم</p>
+</div>
+<a href="contact.html" class="focus-ring inline-flex shrink-0 items-center rounded-full bg-navy-950 px-8 py-3.5 text-sm font-bold text-white transition hover:bg-navy-700">تماس با ما</a>
+</div>
+</div></div>
+</section>
+
+<!-- Articles -->
+<section class="border-t border-white/10 bg-navy-900 py-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 "><div class="grid gap-5 md:grid-cols-2">
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 md:col-span-2">
+<h3 class="text-xl font-extrabold text-white">معرفی باشگاه بسکتبال ایرانیان</h3>
+
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">باشگاه بسکتبال ایرانیان، یکی از معتبرترین و بهترین مراکز آموزش بسکتبال در استان البرز است.</span><span class="block">این باشگاه با هدف پرورش بازیکنان حرفه‌ای و تربیت نسل جدیدی از ورزشکاران، از امکانات و برنامه‌های متنوعی بهره می‌برد که تمامی نیازهای علاقه‌مندان به بسکتبال را پوشش می‌دهد.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">برنامه‌های آموزشی متنوع</h3>
+<p class="mt-1 text-sm font-bold text-neon">آموزش مبتدی تا پیشرفته</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">باشگاه بسکتبال ایرانیان در گوهردشت کرج دوره‌های آموزشی متنوعی را برای تمامی سطوح سنی و مهارتی ارائه می‌دهد.</span><span class="block">این دوره‌ها شامل آموزش‌های ابتدایی برای کودکان و نوجوانانی است که تازه با بسکتبال آشنا شده‌اند و همچنین دوره‌های پیشرفته برای بازیکنان حرفه‌ای که قصد دارند مهارت‌های خود را به سطح بالاتری برسانند.</span><span class="block">این دوره‌ها با استفاده از روش‌های آموزشی نوین و تکنیک‌های مدرن برگزار می‌شوند تا بازیکنان بتوانند به بهترین شکل ممکن پیشرفت کنند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">تاکید بر کار گروهی و تمرین‌های دسته‌جمعی</h3>
+<p class="mt-1 text-sm font-bold text-neon">توسعه مهارت‌های تیمی</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">یکی از مهم‌ترین اصول آموزشی در باشگاه بسکتبال ایرانیان، تاکید بر کار گروهی است.</span><span class="block">بازیکنان از سنین پایین با مفهوم تیم و کار گروهی آشنا می‌شوند و تمرینات به گونه‌ای طراحی شده‌اند که همکاری و هماهنگی بین اعضای تیم را تقویت کنند.</span><span class="block">این تمرینات شامل بازی‌های تیمی، تمرینات تاکتیکی و استراتژی‌های گروهی می‌شود که به بازیکنان کمک می‌کند تا درک بهتری از نقش خود در تیم داشته باشند و بتوانند به صورت موثرتری با هم‌تیمی‌های خود همکاری کنند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">آموزش اخلاق و نظم</h3>
+<p class="mt-1 text-sm font-bold text-neon">تربیت بازیکنان مسئولیت‌پذیر</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">علاوه بر آموزش مهارت‌های فنی و تاکتیکی، این باشگاه به تربیت اخلاقی و نظم بازیکنان نیز اهمیت ویژه‌ای می‌دهد.</span><span class="block">بازیکنان نه تنها به مهارت‌های ورزشی می‌پردازند، بلکه با اصول اخلاقی و انضباط شخصی نیز آشنا می‌شوند.</span><span class="block">مربیان باشگاه بر این باورند که یک بازیکن موفق باید در کنار مهارت‌های فنی، اخلاق ورزشی و انضباط فردی نیز داشته باشد. به همین دلیل، برنامه‌های آموزشی باشگاه شامل جلسات آموزشی در زمینه‌های اخلاق ورزشی نیز می‌باشد.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">شرکت در مسابقات استان البرز و تهران</h3>
+<p class="mt-1 text-sm font-bold text-neon">فرصت‌های رقابتی برای بازیکنان</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">باشگاه بسکتبال در گوهردشت کرج- ایرانیان- با برگزاری مسابقات دوستانه و رسمی، فرصت‌های بسیاری را برای بازیکنان فراهم می‌کند تا مهارت‌های خود را در شرایط واقعی امتحان کنند.</span><span class="block">بازیکنان برتر این باشگاه در قالب تیم‌های مختلف به مسابقات استانی و کشوری اعزام می‌شوند و می‌توانند در رقابت‌های استان البرز و تهران شرکت کنند.</span><span class="block">این مسابقات نه تنها به بازیکنان کمک می‌کند تا تجربه‌های ارزشمندی کسب کنند، بلکه به مربیان نیز امکان می‌دهد تا نقاط قوت و ضعف تیم را شناسایی و برنامه‌های آموزشی خود را بهبود بخشند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">تمرینات ویژه و تخصصی</h3>
+<p class="mt-1 text-sm font-bold text-neon">پرورش توانایی‌های فردی</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">این باشگاه با ارائه تمرینات ویژه و تخصصی، به بازیکنان کمک می‌کند تا توانایی‌های فردی خود را به حداکثر برسانند.</span><span class="block">این تمرینات شامل تمرینات فیزیکی، تکنیکی و تاکتیکی می‌شود که هر کدام به صورت جداگانه و با هدف بهبود یک مهارت خاص طراحی شده‌اند.</span><span class="block">بازیکنان در این تمرینات به طور فردی و گروهی تحت نظر مربیان با تجربه تمرین می‌کنند و می‌توانند به مرور زمان توانایی‌های خود را ارتقاء دهند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">کادر مربیگری حرفه‌ای</h3>
+<p class="mt-1 text-sm font-bold text-neon">مربیان با تجربه و کارآمد</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">یکی از نقاط قوت باشگاه ایرانیان، کادر مربیگری حرفه‌ای و با تجربه آن است.</span><span class="block">این مربیان با بهره‌گیری از روش‌های نوین آموزشی و تکنیک‌های مدرن، به بازیکنان کمک می‌کنند تا به بهترین شکل ممکن پیشرفت کنند.</span><span class="block">مربیان باشگاه نه تنها در زمینه آموزش مهارت‌های فنی تخصص دارند، بلکه با اصول روانشناسی ورزشی نیز آشنا هستند و می‌توانند به بازیکنان در مدیریت استرس و افزایش اعتماد به نفس کمک کنند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-950/60 p-7 transition hover:border-neon/40 ">
+<h3 class="text-xl font-extrabold text-white">حمایت و همدلی خانواده ایرانیان</h3>
+<p class="mt-1 text-sm font-bold text-neon">همبستگی و اتحاد در جامعه ورزشی</p>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">باشگاه بسکتبال ایرانیان با برگزاری برنامه‌های جانبی و حمایت‌های ویژه، سعی در ایجاد یک جامعه ورزشی متحد و همبسته دارد.</span><span class="block">برنامه‌های مانند اردوهای تفریحی علاوه بر تقویت مهارت‌های ورزشی، به بهبود روحیه تیمی و ایجاد همبستگی بیشتر بین بازیکنان و خانواده‌هایشان کمک می‌کند.</span><span class="block">این حمایت‌ها باعث می‌شود تا بازیکنان احساس تعلق بیشتری به باشگاه داشته باشند و با انگیزه بیشتری به تمرینات و مسابقات بپردازند.</span></p>
+</div>
+</article>
+<article class="rounded-2xl border border-neon/30 bg-navy-950/60 p-7 md:col-span-2">
+<h3 class="text-xl font-extrabold text-white">سخن پایانی</h3>
+<div class="mt-4 space-y-3 text-[15px] leading-8 text-slate-300">
+<p><span class="block">باشگاه بسکتبال ایرانیان در حال حاضر در گوهردشت، باغستان و جهانشهر فعال می باشد.</span><span class="block">اگر به دنبال باشگاه بسکتبال در گوهردشت کرج هستید باشگاه ایرانیان یک گزینه مناسب برای شماست.</span><span class="block">این باشگاه با بهره‌گیری از بهترین امکانات و مربیان حرفه‌ای، یکی از بهترین انتخاب‌ها برای علاقه‌مندان به بسکتبال در کرج و استان البرز است. اگر شما یا فرزندانتان علاقه‌مند به یادگیری و پیشرفت در این ورزش هیجان‌انگیز هستید، حتماً به این باشگاه مراجعه کنید و از فرصت‌های بی‌نظیر آموزشی آن بهره‌مند شوید.</span></p>
+<p>
+برای اطلاعات بیشتر و ثبت‌نام، می‌توانید به سایت رسمی باشگاه به آدرس
+<a href="http://iranianbasketball.com" target="_blank" rel="noreferrer" class="font-bold text-neon hover:underline">iranianbasketball.com</a>
+مراجعه کنید یا با شماره تلفن
+<a href="tel:+989121360626" class="font-bold text-neon hover:underline">09121360626</a>
+تماس بگیرید.
+</p>
+</div>
+</article>
+</div></div>
+</section>
+
+<!-- Photo -->
+<section class="pt-20">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 "><div class="mb-8">
+<h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+<span class="ml-3 inline-block h-6 w-1.5 -mb-0.5 rounded-full bg-neon"></span>
+باشگاه بسکتبال ایرانیان
+</h2>
+
+</div><img src="images/home-hero.jpg" alt="باشگاه بسکتبال ایرانیان" title="Home 1" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover aspect-[3/2] max-h-[640px]"></div>
+</section>
+</main>
+<footer class="mt-24 border-t border-white/10 bg-navy-900">
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
+<div class="flex items-start gap-5">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" title="آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید" class="h-24 w-auto shrink-0">
+<div>
+<h2 class="text-base font-bold text-white">آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید</h2>
+<a href="index.html" class="mt-2 inline-block text-sm text-neon hover:underline">iranianbasketball.com</a>
+</div>
+</div>
+
+<nav aria-label="پیوندها">
+<h3 class="mb-4 text-sm font-bold text-neon">دسترسی سریع</h3>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="text-slate-300 transition hover:text-white">خانه</a></li>
+<li><a href="about.html" class="text-slate-300 transition hover:text-white">درباره ما</a></li>
+<li><a href="services.html" class="text-slate-300 transition hover:text-white">فعالیت ها</a></li>
+<li><a href="news.html" class="text-slate-300 transition hover:text-white">اخبار</a></li>
+<li><a href="couching-team.html" class="text-slate-300 transition hover:text-white">کادر مربیگری</a></li>
+<li><a href="contact.html" class="text-slate-300 transition hover:text-white">ارتباط با ما</a></li>
+</ul>
+</nav>
+
+<div>
+<h3 class="mb-4 text-sm font-bold text-neon">راه های ارتباطی</h3>
+<ul class="space-y-3 text-sm">
+<li>
+<a href="mailto:coach@iranianbasketball.com" class="text-slate-300 transition hover:text-white">
+Email
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">coach@iranianbasketball.com</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/iranian.basketball?igsh=c3Z5d3B5a3VxbjN5" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">Instagram</a>
+</li>
+<li>
+<a href="tel:+989121360626" class="text-slate-300 transition hover:text-white">
+Phone 1
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">09121360626</span>
+</a>
+</li>
+<li class="text-slate-300">YouTube</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+<p dir="ltr">Copyright © 2026 باشگاه بسکتبال ایرانیان | Powered by باشگاه بسکتبال ایرانیان</p>
+</div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  var icon = document.getElementById('menu-icon');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.setAttribute('d', open ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16');
+  });
+})();
+</script>
+</body>
+</html>

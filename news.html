@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اخبار | باشگاه بسکتبال ایرانیان</title>
+<meta name="description" content="اخبار باشگاه بسکتبال ایرانیان؛ مسابقات لیگ جوانان استان البرز.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5/index.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #060f26;
+  --color-navy-900: #0a1a3c;
+  --color-navy-800: #0f2550;
+  --color-navy-700: #163262;
+  --color-navy-600: #1f4079;
+  --color-neon: #b5ff1f;
+  --color-neon-dim: #93d40f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-navy-950);
+  color: #dbe4f5;
+  font-family: var(--font-sans);
+  line-height: 1.9;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-navy-950);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 3px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="antialiased">
+<a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] focus:rounded focus:bg-neon focus:px-3 focus:py-2 focus:text-navy-950">پرش به محتوا</a>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy-950/85 backdrop-blur-md">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+<a href="index.html" class="focus-ring flex items-center gap-3">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" class="h-14 w-auto">
+<span class="hidden text-base font-bold text-white sm:block">باشگاه بسکتبال ایرانیان</span>
+</a>
+
+<nav class="hidden items-center gap-1 lg:flex" aria-label="منوی اصلی">
+<a href="index.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">خانه</a>
+<a href="about.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">درباره ما</a>
+<a href="services.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">فعالیت ها</a>
+<a href="news.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-neon">اخبار<span class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-neon"></span></a>
+<a href="couching-team.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">کادر مربیگری</a>
+<a href="contact.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">ارتباط با ما</a>
+</nav>
+
+<div class="flex items-center gap-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center gap-2 rounded-full bg-neon px-5 py-2 text-sm font-bold text-navy-950 transition hover:bg-white sm:inline-flex">
+<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+ایرانیان
+</a>
+<button type="button" id="menu-btn" aria-label="باز و بسته کردن منو" aria-expanded="false" class="focus-ring flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden">
+<svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path id="menu-icon" d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+</div>
+</div>
+
+<nav id="mobile-nav" class="hidden border-t border-white/10 bg-navy-900 lg:hidden" aria-label="منوی موبایل">
+<ul class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+<li><a href="index.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">خانه</a></li>
+<li><a href="about.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">درباره ما</a></li>
+<li><a href="services.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">فعالیت ها</a></li>
+<li><a href="news.html" class="block rounded-lg px-3 py-3 text-base font-medium bg-white/5 text-neon">اخبار</a></li>
+<li><a href="couching-team.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">کادر مربیگری</a></li>
+<li><a href="contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">ارتباط با ما</a></li>
+<li class="pt-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="block rounded-lg bg-neon px-3 py-3 text-center font-bold text-navy-950">ایرانیان</a>
+</li>
+</ul>
+</nav>
+</header>
+<main id="content">
+<section class="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-navy-800 to-navy-950">
+<div class="pointer-events-none absolute -top-32 -left-24 h-72 w-72 rounded-full bg-neon/10 blur-3xl"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 relative py-16 sm:py-20"><p class="mb-3 text-sm font-bold text-neon">باشگاه بسکتبال ایرانیان</p><h1 class="text-3xl font-extrabold leading-tight text-white sm:text-5xl">اخبار</h1><div class="mt-6 h-1 w-20 rounded-full bg-neon"></div></div>
+</section>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 space-y-14 py-14">
+<!-- News 1 -->
+<article class="grid items-center gap-8 lg:grid-cols-2">
+<img src="images/news-1.jpg" alt="اخبار باشگاه بسکتبال ایرانیان" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover ">
+<div>
+<h2 class="text-2xl font-extrabold leading-snug text-white sm:text-3xl">شرکت تیم جوانان ایرانیان در مسابقات بسکتبال استان البرز</h2>
+<div class="mt-4 h-1 w-16 rounded-full bg-neon"></div>
+<p class="mt-6 text-[15px] leading-8 text-slate-300">
+<strong class="text-white">اسامی بازیکنان این تیم :</strong>
+پارسا کاظمی سجاد فلاحت پیشه نیما خاکی پور نیما قائمی امیرعلی قربان جنت امیرحسین گنج بخش رامتین بغدادی رهام دوام بد ماهان خدابنده لو محمد امین حسینی آرین نیک کار محمد امین جعفری ساران عرشیا یوسفی
+</p>
+<p class="mt-4 text-[15px] leading-8 text-slate-300">برای این تیم آرزوی موفقیت داریم و امیدواریم تمامی بازی ها را با پیروزی به پایان برسانند.</p>
+<div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400">
+<span>باشگاه ورزشی <a href="contact.html" class="font-bold text-neon hover:underline">ایرانیان</a></span>
+<span class="rounded-full bg-neon/15 px-3 py-1 font-bold text-neon">تاریخ خبر : ۲۴ اسفند ۱۴۰۲</span>
+</div>
+</div>
+</article>
+
+<hr class="border-white/10">
+
+<!-- News 2 -->
+<article>
+<h3 class="text-2xl font-extrabold text-white sm:text-3xl">پیروزی تیم جوانان ایرانیان در گام نخست</h3>
+<div class="mt-4 h-1 w-16 rounded-full bg-neon"></div>
+<div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+<img src="images/news-2.webp" alt="باشگاه بسکتبال ایرانیان" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover aspect-square">
+<p class="text-[15px] leading-9 text-slate-300">
+پیروزی تیم جوانان ایرانیان در گام نخست؛
+<br>
+اولین مسابقه تیم زیر هجده سال ایرانیان در لیگ جوانان استان البرز در تاریخ بیست و پنجم اسفند با پیروزی مقابل تیم رایمون همراه بود که در این دیدار نزدیک، نیما خاکی پور ‌با کسب ۱۷ امتیاز، ۶ ریباند و ۵ توپ ربایی، و سجاد فلاحت پیشه با کسب ۱۲ امتیاز، ۲۰ ریباند (۸ ریباند حمله) و ۴ توپ ربایی نقش مهمی در پیروزی در این مسابقه داشتند.
+</p>
+</div>
+
+<div class="mt-10 overflow-hidden rounded-2xl border border-neon/30 bg-navy-900">
+<div class="grid items-center gap-0 md:grid-cols-[320px_1fr]">
+<img src="images/news-3.webp" alt="بهترین بازیکن زمین باشگاه بسکتبال ایرانیان نیما خاکی پور" loading="lazy" class="h-full w-full object-cover">
+<div class="p-8">
+<h2 dir="ltr" class="text-left text-2xl font-extrabold tracking-wide text-neon sm:text-3xl">MOST VALUABLE PLAYER OF THE MATCH</h2>
+<p class="mt-5 text-[15px] leading-9 text-slate-300">از سری مسابقات بسکتبال استان البرز، در دیدار اول باشگاه بسکتبال ایرانیان با تیم رایمون، نیما خاکی پور با کسب ۱۷ امتیاز، ۵ توپ ربایی و ۶ ریباند بهترین بازیکن زمین بود.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<footer class="mt-24 border-t border-white/10 bg-navy-900">
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
+<div class="flex items-start gap-5">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" title="آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید" class="h-24 w-auto shrink-0">
+<div>
+<h2 class="text-base font-bold text-white">آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید</h2>
+<a href="index.html" class="mt-2 inline-block text-sm text-neon hover:underline">iranianbasketball.com</a>
+</div>
+</div>
+
+<nav aria-label="پیوندها">
+<h3 class="mb-4 text-sm font-bold text-neon">دسترسی سریع</h3>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="text-slate-300 transition hover:text-white">خانه</a></li>
+<li><a href="about.html" class="text-slate-300 transition hover:text-white">درباره ما</a></li>
+<li><a href="services.html" class="text-slate-300 transition hover:text-white">فعالیت ها</a></li>
+<li><a href="news.html" class="text-slate-300 transition hover:text-white">اخبار</a></li>
+<li><a href="couching-team.html" class="text-slate-300 transition hover:text-white">کادر مربیگری</a></li>
+<li><a href="contact.html" class="text-slate-300 transition hover:text-white">ارتباط با ما</a></li>
+</ul>
+</nav>
+
+<div>
+<h3 class="mb-4 text-sm font-bold text-neon">راه های ارتباطی</h3>
+<ul class="space-y-3 text-sm">
+<li>
+<a href="mailto:coach@iranianbasketball.com" class="text-slate-300 transition hover:text-white">
+Email
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">coach@iranianbasketball.com</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/iranian.basketball?igsh=c3Z5d3B5a3VxbjN5" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">Instagram</a>
+</li>
+<li>
+<a href="tel:+989121360626" class="text-slate-300 transition hover:text-white">
+Phone 1
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">09121360626</span>
+</a>
+</li>
+<li class="text-slate-300">YouTube</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+<p dir="ltr">Copyright © 2026 باشگاه بسکتبال ایرانیان | Powered by باشگاه بسکتبال ایرانیان</p>
+</div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  var icon = document.getElementById('menu-icon');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.setAttribute('d', open ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16');
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فعالیت ها | باشگاه بسکتبال ایرانیان</title>
+<meta name="description" content="آموزش سطح پایه، متوسط و پیشرفته باشگاه بسکتبال ایرانیان و پاسخ به سوالات متداول.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/vazirmatn@5/index.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+  --color-navy-950: #060f26;
+  --color-navy-900: #0a1a3c;
+  --color-navy-800: #0f2550;
+  --color-navy-700: #163262;
+  --color-navy-600: #1f4079;
+  --color-neon: #b5ff1f;
+  --color-neon-dim: #93d40f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-navy-950);
+  color: #dbe4f5;
+  font-family: var(--font-sans);
+  line-height: 1.9;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-navy-950);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 3px;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="antialiased">
+<a href="#content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] focus:rounded focus:bg-neon focus:px-3 focus:py-2 focus:text-navy-950">پرش به محتوا</a>
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy-950/85 backdrop-blur-md">
+<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+<a href="index.html" class="focus-ring flex items-center gap-3">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" class="h-14 w-auto">
+<span class="hidden text-base font-bold text-white sm:block">باشگاه بسکتبال ایرانیان</span>
+</a>
+
+<nav class="hidden items-center gap-1 lg:flex" aria-label="منوی اصلی">
+<a href="index.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">خانه</a>
+<a href="about.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">درباره ما</a>
+<a href="services.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-neon">فعالیت ها<span class="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-neon"></span></a>
+<a href="news.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">اخبار</a>
+<a href="couching-team.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">کادر مربیگری</a>
+<a href="contact.html" class="focus-ring relative rounded-lg px-3.5 py-2 text-sm font-medium transition-colors text-slate-300 hover:text-white">ارتباط با ما</a>
+</nav>
+
+<div class="flex items-center gap-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="focus-ring hidden items-center gap-2 rounded-full bg-neon px-5 py-2 text-sm font-bold text-navy-950 transition hover:bg-white sm:inline-flex">
+<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+ایرانیان
+</a>
+<button type="button" id="menu-btn" aria-label="باز و بسته کردن منو" aria-expanded="false" class="focus-ring flex h-11 w-11 items-center justify-center rounded-lg border border-white/15 text-white lg:hidden">
+<svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path id="menu-icon" d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+</div>
+</div>
+
+<nav id="mobile-nav" class="hidden border-t border-white/10 bg-navy-900 lg:hidden" aria-label="منوی موبایل">
+<ul class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+<li><a href="index.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">خانه</a></li>
+<li><a href="about.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">درباره ما</a></li>
+<li><a href="services.html" class="block rounded-lg px-3 py-3 text-base font-medium bg-white/5 text-neon">فعالیت ها</a></li>
+<li><a href="news.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">اخبار</a></li>
+<li><a href="couching-team.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">کادر مربیگری</a></li>
+<li><a href="contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-200">ارتباط با ما</a></li>
+<li class="pt-2">
+<a href="images/club.mp4" target="_blank" rel="noopener noreferrer" class="block rounded-lg bg-neon px-3 py-3 text-center font-bold text-navy-950">ایرانیان</a>
+</li>
+</ul>
+</nav>
+</header>
+<main id="content">
+<section class="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-navy-800 to-navy-950">
+<div class="pointer-events-none absolute -top-32 -left-24 h-72 w-72 rounded-full bg-neon/10 blur-3xl"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 relative py-16 sm:py-20"><p class="mb-3 text-sm font-bold text-neon">باشگاه بسکتبال ایرانیان</p><h1 class="text-3xl font-extrabold leading-tight text-white sm:text-5xl">فعالیت ها</h1><div class="mt-6 h-1 w-20 rounded-full bg-neon"></div></div>
+</section>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 space-y-8 py-14">
+<div class="grid items-start gap-6 lg:grid-cols-[1.4fr_1fr]">
+<article class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<div class="mb-5 flex items-start gap-4">
+<span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-neon text-lg font-extrabold text-navy-950">۰۱</span>
+<h2 class="pt-1 text-xl font-extrabold leading-snug text-white sm:text-2xl">آموزش سطح پایه باشگاه بسکتبال ایرانیان</h2>
+</div>
+<div class="space-y-3 text-[15px] leading-8 text-slate-300">
+<p>سطح پایه از ۸ سالگی شروع می شود و مطالب ویژه بسکتبال کودکان در این سطوح آموزش داده می شود.</p>
+<p>این مطلب به صورتی است که کودکان علاوه بر اینکه تکنیک ها و تاکتیک های مختلف را می آموزند، کیفیت زندگی آنها را نیز ارتقاء می بخشد.</p>
+<p>این آموزه ها با افزایش توان و بالا بردن هماهنگی اعضاء بدن کمک شایانی به بهبود کیفیت زندگی آنها نیز خواهد نمود.</p>
+<p>تمرینات آموزش بسکتبال کودکان شامل بالا بردن هماهنگی اعضاء بدن، افزایش استقامت بدنی، افزایش تمرکز و افزایش تعادل بدنی خواهد بود.</p>
+<p>تمرینات این سطح معمولا همراه با انواع بازی های متنوع و مهیج ویژه کودکان می باشد.</p>
+<p>در خلال این بازیها تکنیک ها و مهارت هایی مانند: کنترل توپ، تعادل، جابجایی و درک بهتر فضا را نیز می آموزند.</p>
+</div>
+<div class="mt-6"><a href="contact.html" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition bg-neon text-navy-950 hover:bg-white">تماس با ما</a></div>
+</article>
+<div class="grid gap-6">
+<img src="images/svc-1.jpg" alt="تمرین" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover ">
+<img src="images/svc-2.jpg" alt="باشگاه بسکتبال ایرانیان" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover ">
+</div>
+</div>
+
+<div class="grid items-start gap-6 lg:grid-cols-2">
+<article class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<div class="mb-5 flex items-start gap-4">
+<span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-neon text-lg font-extrabold text-navy-950">۰۲</span>
+<h2 class="pt-1 text-xl font-extrabold leading-snug text-white sm:text-2xl">آموزش سطح متوسط باشگاه بسکتبال ایرانیان</h2>
+</div>
+<div class="space-y-3 text-[15px] leading-8 text-slate-300">
+<p>در سطح متوسط بازیکنان با تکنیک های فردی پیشرفته تر و استفاده از آن در مسابقات دوستانه و رسمی آشنا می شوند.</p>
+<p>آشنایی با سیستم های متنوع دفاع و حمله بسکتبال و همینطور تلاش برای ایجاد کار گروهی از اهم فعالیت های این گروه است.</p>
+<p>برنامه ریزی تمرین ها جهت آموزش بسکتبال در این سطح به گونه ای است تا بازیکنان به هماهنگی عصبی-عضلانی بالاتر و به توان و استقامت قبلی-عروقی بالاتری دست یابند.</p>
+<p>کودکان می‌آموزند تا با استفاده از کار گروهی در مسابقات شرکت کنند.</p>
+<p>بدین منظور طراحی تمرینات این سطح همواره به صورت دو، سه، چهار و پنج نفره می باشد.</p>
+<p>بدین ترتیب با ایجاد فضای کار گروهی، توانایی کودکان را در استفاده از سیستم های گروهی حمله و دفاع افزایش خواهد یافت.</p>
+<p>انجام بازی های دوستانه، شرکت در مسابقات استانی و چندجانبه از جمله فعالیت های این دسته می باشد.</p>
+</div>
+
+</article>
+<article class="rounded-2xl border border-white/10 bg-navy-900 p-7 sm:p-9">
+<div class="mb-5 flex items-start gap-4">
+<span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-neon text-lg font-extrabold text-navy-950">۰۳</span>
+<h2 class="pt-1 text-xl font-extrabold leading-snug text-white sm:text-2xl">آموزش سطح پیشرفته باشگاه بسکتبال ایرانیان</h2>
+</div>
+<div class="space-y-3 text-[15px] leading-8 text-slate-300">
+<p>ورزشکاران در سطح پیشرفته تمامی تکنیک های فردی و تاکتیک های گروهی پیشرفته را فرا خواهند گرفت.</p>
+<p>بازیکنان در این سطح با شرکت در مسابقات دوستانه و رسمی و همینطور مسابقات چندجانبه با انواع سیستم های دفاعی و حمله پیشرفته آشنا می شوند.</p>
+<p>توان بدنی بازیکنان، افزایش توان قلبی و عروقی، افزایش استقامت جزو اهم مواردی است که آنها را فرا خواهند گرفت.این سطح ویژه رده های نوجوانان و جوانان قرار می گیرد.</p>
+<p>طراحی تمرینات آنها به گونه ای است تا ورزشکاران علاوه بر افزایش توان بدنی و استقامت، بتوانند به حداکثر چابکی و سرعت نیز برسند.</p>
+<p>این مهم با استفاده از تمرینات بدنسازی حین تمرین و یا استفاده از کلاس های آمادگی جسمانی ایجاد می گردد.</p>
+<p>بازیکنان در این سطح با استفاده از کارهای گروهی پیشرفته و هماهنگی با گروه به سطح پیشرفته در بازی می رسند.</p>
+<p>در این سطح بازیکنان می توانند انواع سیستم های دفاعی و حمله پیچیده را اجرا نمایند.</p>
+</div>
+<div class="mt-6"><a href="contact.html" class="focus-ring inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-bold transition bg-neon text-navy-950 hover:bg-white">تماس با ما</a></div>
+</article>
+</div>
+
+<img src="images/svc-3.jpg" alt="باشگاه بسکتبال ایرانیان" loading="lazy" class="w-full rounded-2xl border border-white/10 object-cover max-h-[560px]">
+
+<div class="pt-10">
+<div class="mb-8">
+<h2 class="text-2xl font-extrabold text-white sm:text-3xl">
+<span class="ml-3 inline-block h-6 w-1.5 -mb-0.5 rounded-full bg-neon"></span>
+سوال و جواب
+</h2>
+<p class="mt-2 text-slate-400">چند نمونه از سوالات عزیزان در خصوص استفاده از کلاس های باشگاه بسکتبال ایرانیان</p>
+</div>
+<div class="space-y-3">
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40" open>
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+آیا کلاس ها از لحاظ سنی هم تفکیک می شوند؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>بله، کلاس ها معمولا از لحاظ تکنیکی و سنی تفکیک می شوند به این صورت که بازیکنان با هم سن های خود تمرین کنند تا تفاوت سنی وجود نداشته باشد.</p>
+<p>بدین ترتیب مربیان باشگاه با تمرکز بیشتری به آموزش بازیکنان خواهند پرداخت و بازیکنان نیز با هم سن های خود ارتباط بهتری برقرار می نمایند.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+آیا کلاس ها ویژه بزرگسالان هم برگزار می گردد؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>خیر، در حال حاضر کلاس ویژه بزرگسالان برگزار نمی گردد.</p>
+<p>عزیزانی که اصول اولیه بسکتبال را آموخته باشند می توانند در گروه پیشرفته، با تیم جوانان و امید در باشگاه بسکتبال کرج تمرین کنند.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+هزینه شرکت در کلاس ها چگونه است؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>هزینه شرکت در کلاس ها با توجه به سطح بازیکن و نوع سالن تمرینی متفاوت است.</p>
+<p>کلاسهای آموزش بسکتبال کرج معمولا در سالن های مختلف برگزار می گردد که طبیعتا هزینه های آن نیز متفاوت خواهد بود.</p>
+<p>پیشنهاد می کنیم تا قبل از ثبت نام در این مورد با مربیان صحبت نموده و اطلاعات لازم را از آنها جویا شوید.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+کلاس ها چند جلسه در هفته برگزار می گردد؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>کلاس های مبتدی ۲ روز در هفته برگزار می گردد. کلاس های سطح متوسط و پیشرفته بسکتبال و با توجه به سطح بازیکن ممکن است ۳ یا ۴ جلسه در هفته باشد.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+برای شرکت در کلاس ها چه امکانات و لوازمی نیاز هست؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>در درجه اول کفش مناسب بسکتبال نیاز هست.</p>
+<p>لباس ورزشی و توپ با سایز مناسب نیز برای هر بازیکن لازم هست تا در زمان اجرای تمرینات انفرادی بتواند با تمرکز لازم از آن استفاده نماید.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+کلاس ها معمولا در کجا برگزار می گردند؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p><strong class="text-white">باشگاه بسکتبال کرج:</strong></p>
+<p>کرج، گوهردشت، انتهای بلوار بیهقی، مجموعه ورزشی انقلاب، سالن نشاط</p>
+<p class="pt-2"><strong class="text-white">باشگاه بسکتبال گوهردشت:</strong></p>
+<p>کرج،گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+آیا در این باشگاه مسابقات و تورنمنت‌هایی برای بازیکنان برگزار می‌کند؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>بله، آکادمی بسکتبال باشگاه ایرانیان به طور منظم مسابقات و تورنمنت‌های استان و تهران را برای بازیکنان خود برگزار می‌کند.</p>
+<p>این مسابقات فرصتی عالی برای بازیکنان فراهم می‌کنند تا مهارت‌های خود را در شرایط واقعی به کار بگیرند و تجربه‌های ارزشمندی کسب کنند.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+چه مزایایی برای عضویت در آکادمی بسکتبال ایرانیان وجود دارد؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>عضویت در این باشگاه مزایای بسیاری دارد.</p>
+<p>بازیکنان علاوه بر یادگیری مهارت‌های فنی و تاکتیکی بسکتبال، فرصت دارند تا با اصول روانشناسی ورزشی آشنا شوند و اعتماد به نفس خود را افزایش دهند.</p>
+<p>همچنین، محیط تیمی و همکاری با دیگر بازیکنان، به بهبود روحیه تیمی و تقویت روابط اجتماعی کمک می‌کند.</p>
+<p>این ترکیب از آموزش و تجربه، بازیکنان را به بهترین نحو ممکن برای موفقیت‌های آینده آماده می‌سازد.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+چگونه می‌توانم فرزندم را در آکادمی بسکتبال ایرانیان ثبت نام کنم؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>برای ثبت نام فرزندتان در باشگاه بسکتبال ایرانیان، می‌توانید به وب‌سایت رسمی باشگاه مراجعه کنید. همچنین، می‌توانید با مراجعه حضوری به باشگاه و صحبت با مسئولین ثبت نام، اطلاعات بیشتری در این زمینه کسب کنید و فرآیند ثبت نام را تکمیل کنید.</p>
+<p>همچنین می توانید جهت صحبت تلفنی با شماره <a href="tel:+989121360626" class="font-bold text-neon">۰۹۱۲۱۳۶۰۶۲۶</a> تماس حاصل فرمایید.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+چگونه می‌توان بازخوردی از عملکرد بازیکن دریافت کرد؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>مربیان به طور منظم بازخوردی از عملکرد بازیکنان ارائه می‌دهند.</p>
+<p>این بازخوردها از طریق جلسات انفرادی با بازیکنان و والدین، جلسات گروهی و تحلیل‌های ویدیویی انجام می‌شوند.</p>
+<p>این فرایند به بازیکنان کمک می‌کند تا نقاط قوت و ضعف خود را بشناسند و برای بهبود عملکرد خود تلاش کنند.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-white/10 bg-navy-900 open:border-neon/40">
+<summary class="focus-ring flex cursor-pointer items-center justify-between gap-4 rounded-xl px-6 py-4 text-base font-bold text-white">
+کلاس ها در کدام استان و شهر برگزار می گردد؟
+<span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon/15 text-xl leading-none text-neon transition-transform">+</span>
+</summary>
+<div class="space-y-2 px-6 pb-5 text-[15px] leading-8 text-slate-300">
+<p>کلاس ها در حال حاضر در استان البرز و شهر کرج، گوهردشت، باغستان برگزار می گردد.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-24 border-t border-white/10 bg-navy-900">
+<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
+<div class="flex items-start gap-5">
+<img src="images/logo.png" alt="آکادمی بسکتبال ایرانیان" title="آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید" class="h-24 w-auto shrink-0">
+<div>
+<h2 class="text-base font-bold text-white">آدرس: کرج، گوهردشت، بلوار رستاخیز، کوچه ششم، سالن امید</h2>
+<a href="index.html" class="mt-2 inline-block text-sm text-neon hover:underline">iranianbasketball.com</a>
+</div>
+</div>
+
+<nav aria-label="پیوندها">
+<h3 class="mb-4 text-sm font-bold text-neon">دسترسی سریع</h3>
+<ul class="space-y-2 text-sm">
+<li><a href="index.html" class="text-slate-300 transition hover:text-white">خانه</a></li>
+<li><a href="about.html" class="text-slate-300 transition hover:text-white">درباره ما</a></li>
+<li><a href="services.html" class="text-slate-300 transition hover:text-white">فعالیت ها</a></li>
+<li><a href="news.html" class="text-slate-300 transition hover:text-white">اخبار</a></li>
+<li><a href="couching-team.html" class="text-slate-300 transition hover:text-white">کادر مربیگری</a></li>
+<li><a href="contact.html" class="text-slate-300 transition hover:text-white">ارتباط با ما</a></li>
+</ul>
+</nav>
+
+<div>
+<h3 class="mb-4 text-sm font-bold text-neon">راه های ارتباطی</h3>
+<ul class="space-y-3 text-sm">
+<li>
+<a href="mailto:coach@iranianbasketball.com" class="text-slate-300 transition hover:text-white">
+Email
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">coach@iranianbasketball.com</span>
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/iranian.basketball?igsh=c3Z5d3B5a3VxbjN5" target="_blank" rel="noopener noreferrer" class="text-slate-300 transition hover:text-white">Instagram</a>
+</li>
+<li>
+<a href="tel:+989121360626" class="text-slate-300 transition hover:text-white">
+Phone 1
+<span class="mx-2 text-slate-500">·</span>
+<span dir="ltr">09121360626</span>
+</a>
+</li>
+<li class="text-slate-300">YouTube</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-5 text-center text-xs text-slate-400">
+<p dir="ltr">Copyright © 2026 باشگاه بسکتبال ایرانیان | Powered by باشگاه بسکتبال ایرانیان</p>
+</div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  var icon = document.getElementById('menu-icon');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    icon.setAttribute('d', open ? 'M6 6l12 12M18 6L6 18' : 'M4 7h16M4 12h16M4 17h16');
+  });
+})();
+</script>
+</body>
+</html>
